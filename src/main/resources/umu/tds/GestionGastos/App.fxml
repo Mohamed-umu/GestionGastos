@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="umu.tds.GestionGastos.AppController">
+
+    
+    <top>
+		<HBox spacing="10" alignment="CENTER_LEFT" styleClass="barra-navegacion">
+		    <Button text="Principal" onAction="#irPrincipal" styleClass="boton-nav"/>
+		    <Button text="Estadísticas" onAction="#irEstadisticas" styleClass="boton-nav"/>
+		    <Button text="Alertas" onAction="#irAlertas" styleClass="boton-nav"/>
+		    <Button text="Cuentas compartidas" onAction="#irCompartidas" styleClass="boton-nav"/>
+		</HBox>
+    </top>
+
+    
+    <center>
+        <StackPane fx:id="contenido"/>
+    </center>
+
+</BorderPane>
