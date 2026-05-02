@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToWidth="true"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="umu.tds.GestionGastos.PrincipalController">
+
+    <content>
+
+        <VBox spacing="14">
+
+            <padding>
+                <Insets top="14" right="14" bottom="14" left="14"/>
+            </padding>
+
+            <!-- TÍTULO -->
+            <VBox spacing="3">
+                <Label text="Gestión de Gastos" styleClass="titulo-principal"/>
+                <Label text="Registra, consulta, importa y exporta tus gastos personales" styleClass="subtitulo"/>
+            </VBox>
+
+            <!-- FORMULARIO -->
+            <VBox spacing="10" styleClass="panel-formulario">
+
+                <Label text="Nuevo gasto" styleClass="titulo-seccion"/>
+
+                <GridPane hgap="10" vgap="10">
+
+                    <DatePicker fx:id="campoFecha" promptText="Fecha"
+                                prefWidth="160"
+                                GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+                    <ComboBox fx:id="campoCuenta" promptText="Cuenta" editable="true"
+                              prefWidth="160"
+                              GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                    <ComboBox fx:id="campoCategoria" promptText="Categoría" editable="true"
+                              prefWidth="160"
+                              GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+                    <TextField fx:id="campoSubcategoria" promptText="Subcategoría"
+                               prefWidth="160"
+                               GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                    <TextField fx:id="campoDescripcion" promptText="Descripción"
+                               prefWidth="230"
+                               GridPane.rowIndex="1" GridPane.columnIndex="0"
+                               GridPane.columnSpan="2"/>
+
+                    <ComboBox fx:id="campoPagador" promptText="Pagador" editable="true"
+                              prefWidth="160"
+                              GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+                    <TextField fx:id="campoCantidad" promptText="Cantidad"
+                               prefWidth="120"
+                               GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+                    <TextField fx:id="campoMoneda" promptText="Moneda"
+                               prefWidth="100"
+                               GridPane.rowIndex="1" GridPane.columnIndex="4"/>
+
+                </GridPane>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <Button text="Añadir gasto"
+                            onAction="#añadirGasto"
+                            styleClass="boton-primario"/>
+
+                    <Button text="Eliminar gasto guardado"
+                            onAction="#eliminarGastoGuardado"
+                            styleClass="boton-peligro"/>
+
+                    <Button text="Exportar CSV"
+                            onAction="#exportarCSV"
+                            styleClass="boton-exportar"/>
+                </HBox>
+
+            </VBox>
+
+            <!-- TABLA DE GASTOS GUARDADOS -->
+            <VBox spacing="8" styleClass="panel-tabla">
+
+                <Label text="Gastos guardados en la aplicación" styleClass="titulo-seccion"/>
+
+                <TableView fx:id="tablaGastos" prefHeight="220" editable="true">
+                    <columns>
+                        <TableColumn fx:id="colFecha" text="Fecha" prefWidth="140"/>
+                        <TableColumn fx:id="colCuenta" text="Cuenta" prefWidth="120"/>
+                        <TableColumn fx:id="colCategoria" text="Categoría" prefWidth="130"/>
+                        <TableColumn fx:id="colSubcategoria" text="Subcategoría" prefWidth="130"/>
+                        <TableColumn fx:id="colDescripcion" text="Descripción" prefWidth="230"/>
+                        <TableColumn fx:id="colPagador" text="Pagador" prefWidth="110"/>
+                        <TableColumn fx:id="colCantidad" text="Cantidad" prefWidth="90"/>
+                        <TableColumn fx:id="colMoneda" text="Moneda" prefWidth="80"/>
+                    </columns>
+                </TableView>
+
+            </VBox>
+
+            <!-- TABLA DE IMPORTADOS -->
+            <VBox spacing="8" styleClass="panel-tabla">
+
+                <VBox spacing="8" styleClass="panel-importacion">
+                    <Label text="Gastos importados pendientes de guardar" styleClass="titulo-seccion"/>
+
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Button text="Importar archivo"
+                                onAction="#importarArchivo"
+                                styleClass="boton-importar"/>
+
+                        <Button text="Guardar importados"
+                                onAction="#guardarImportados"
+                                styleClass="boton-exito"/>
+
+                        <Button text="Eliminar importado"
+                                onAction="#eliminarGastoImportado"
+                                styleClass="boton-peligro"/>
+                    </HBox>
+                </VBox>
+
+                <TableView fx:id="tablaImportados" prefHeight="200" editable="true">
+                    <columns>
+                        <TableColumn fx:id="colFechaImp" text="Fecha" prefWidth="140"/>
+                        <TableColumn fx:id="colCuentaImp" text="Cuenta" prefWidth="120"/>
+                        <TableColumn fx:id="colCategoriaImp" text="Categoría" prefWidth="130"/>
+                        <TableColumn fx:id="colSubcategoriaImp" text="Subcategoría" prefWidth="130"/>
+                        <TableColumn fx:id="colDescripcionImp" text="Descripción" prefWidth="230"/>
+                        <TableColumn fx:id="colPagadorImp" text="Pagador" prefWidth="110"/>
+                        <TableColumn fx:id="colCantidadImp" text="Cantidad" prefWidth="90"/>
+                        <TableColumn fx:id="colMonedaImp" text="Moneda" prefWidth="80"/>
+                    </columns>
+                </TableView>
+
+            </VBox>
+
+        </VBox>
+
+    </content>
+
+</ScrollPane>
