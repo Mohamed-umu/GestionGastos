@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToWidth="true"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="umu.tds.GestionGastos.AlertasController">
+
+    <content>
+
+        <VBox spacing="14">
+
+            <padding>
+                <Insets top="14" right="14" bottom="14" left="14"/>
+            </padding>
+
+            <!-- TÍTULO -->
+            <VBox spacing="3">
+                <Label text="Alertas de gasto" styleClass="titulo-principal"/>
+                <Label text="Configura límites de gasto y consulta el historial de notificaciones" styleClass="subtitulo"/>
+            </VBox>
+
+            <!-- NUEVA ALERTA -->
+            <VBox spacing="10" styleClass="panel-formulario">
+
+                <Label text="Nueva alerta" styleClass="titulo-seccion"/>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <ComboBox fx:id="comboTipo"
+                              promptText="Tipo alerta"
+                              prefWidth="150"/>
+
+                    <TextField fx:id="campoLimite"
+                               promptText="Límite (€)"
+                               prefWidth="130"/>
+
+                    <ComboBox fx:id="campoCategoria"
+                              promptText="Categoría (opcional)"
+                              editable="true"
+                              prefWidth="220"/>
+
+                    <Button text="Crear alerta"
+                            onAction="#crearAlerta"
+                            styleClass="boton-primario"/>
+                </HBox>
+
+            </VBox>
+
+            <!-- ALERTAS ACTIVAS -->
+            <VBox spacing="8" styleClass="panel-tabla">
+
+                <VBox spacing="8">
+                    <Label text="Alertas activas" styleClass="titulo-seccion"/>
+
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Button text="Eliminar alerta seleccionada"
+                                onAction="#eliminarAlerta"
+                                styleClass="boton-peligro"/>
+                    </HBox>
+                </VBox>
+
+                <TableView fx:id="tablaAlertas" prefHeight="180">
+                    <columns>
+                        <TableColumn fx:id="colTipo" text="Tipo" prefWidth="140"/>
+                        <TableColumn fx:id="colCategoria" text="Categoría" prefWidth="240"/>
+                        <TableColumn fx:id="colLimite" text="Límite (€)" prefWidth="140"/>
+                    </columns>
+                </TableView>
+
+            </VBox>
+
+            <!-- HISTORIAL -->
+            <VBox spacing="8" styleClass="panel-tabla">
+
+                <VBox spacing="8">
+                    <Label text="Historial de notificaciones" styleClass="titulo-seccion"/>
+
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Button text="Refrescar historial"
+                                onAction="#refrescarHistorialVista"
+                                styleClass="boton-secundario"/>
+
+                        <Button text="Limpiar historial"
+                                onAction="#limpiarHistorial"
+                                styleClass="boton-peligro"/>
+                    </HBox>
+                </VBox>
+
+                <TableView fx:id="tablaHistorial" prefHeight="220">
+                    <columns>
+                        <TableColumn fx:id="colFechaHistorial" text="Fecha" prefWidth="180"/>
+                        <TableColumn fx:id="colMensajeHistorial" text="Mensaje" prefWidth="700"/>
+                    </columns>
+                </TableView>
+
+            </VBox>
+
+        </VBox>
+
+    </content>
+
+</ScrollPane>
