@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToWidth="true"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="umu.tds.GestionGastos.EstadisticasController">
+
+    <content>
+
+        <VBox spacing="14">
+
+            <padding>
+                <Insets top="14" right="14" bottom="14" left="14"/>
+            </padding>
+
+            <!-- TÍTULO -->
+            <VBox spacing="3">
+                <Label text="Estadísticas de gastos" styleClass="titulo-principal"/>
+                <Label text="Consulta gráficos, totales y resúmenes filtrados de tus gastos" styleClass="subtitulo"/>
+            </VBox>
+
+            <!-- FILTROS -->
+            <VBox spacing="10" styleClass="panel-formulario">
+
+                <Label text="Filtros de búsqueda" styleClass="titulo-seccion"/>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <ComboBox fx:id="comboMes"
+                              promptText="Mes"
+                              prefWidth="140"/>
+
+                    <ComboBox fx:id="comboCuenta"
+                              promptText="Cuenta"
+                              prefWidth="160"/>
+
+                    <ComboBox fx:id="comboCategoria"
+                              promptText="Categoría"
+                              prefWidth="170"/>
+
+                    <DatePicker fx:id="fechaInicio"
+                                promptText="Fecha inicio"
+                                prefWidth="150"/>
+
+                    <DatePicker fx:id="fechaFin"
+                                promptText="Fecha fin"
+                                prefWidth="150"/>
+
+                    <Button text="Aplicar filtros"
+                            onAction="#aplicarFiltros"
+                            styleClass="boton-primario"/>
+
+                    <Button text="Limpiar filtros"
+                            onAction="#limpiarFiltros"
+                            styleClass="boton-secundario"/>
+                </HBox>
+
+            </VBox>
+
+            <!-- TARJETAS RESUMEN -->
+            <HBox spacing="14">
+
+                <VBox spacing="5" styleClass="panel-formulario" HBox.hgrow="ALWAYS">
+                    <Label text="Total gastado" styleClass="subtitulo"/>
+                    <Label fx:id="labelTotal" text="0 €" styleClass="titulo-principal"/>
+                </VBox>
+
+                <VBox spacing="5" styleClass="panel-formulario" HBox.hgrow="ALWAYS">
+                    <Label text="Número de gastos" styleClass="subtitulo"/>
+                    <Label fx:id="labelNumeroGastos" text="0" styleClass="titulo-principal"/>
+                </VBox>
+
+                <VBox spacing="5" styleClass="panel-formulario" HBox.hgrow="ALWAYS">
+                    <Label text="Gasto medio" styleClass="subtitulo"/>
+                    <Label fx:id="labelMedia" text="0 €" styleClass="titulo-principal"/>
+                </VBox>
+
+            </HBox>
+
+            <!-- GRÁFICOS -->
+            <HBox spacing="14">
+
+                <VBox spacing="8" styleClass="panel-tabla" HBox.hgrow="ALWAYS">
+                    <Label text="Distribución por categorías" styleClass="titulo-seccion"/>
+
+                    <PieChart fx:id="graficoCircular"
+                              prefHeight="300"
+                              legendVisible="true"
+                              legendSide="LEFT"/>
+                </VBox>
+
+                <VBox spacing="8" styleClass="panel-tabla" HBox.hgrow="ALWAYS">
+                    <Label text="Gastos por categoría" styleClass="titulo-seccion"/>
+
+                    <BarChart fx:id="graficoBarras"
+                              prefHeight="320">
+                        <xAxis>
+                            <CategoryAxis fx:id="ejeCategorias"/>
+                        </xAxis>
+                        <yAxis>
+                            <NumberAxis fx:id="ejeCantidades"/>
+                        </yAxis>
+                    </BarChart>
+                </VBox>
+
+            </HBox>
+
+            <!-- TABLA RESUMEN -->
+            <VBox spacing="8" styleClass="panel-tabla">
+
+                <Label text="Resumen por categoría" styleClass="titulo-seccion"/>
+
+                <TableView fx:id="tablaResumen" prefHeight="210">
+                    <columns>
+                        <TableColumn fx:id="colCategoria" text="Categoría" prefWidth="220"/>
+                        <TableColumn fx:id="colTotal" text="Total (€)" prefWidth="130"/>
+                        <TableColumn fx:id="colNumero" text="Nº gastos" prefWidth="130"/>
+                        <TableColumn fx:id="colMedia" text="Media (€)" prefWidth="130"/>
+                    </columns>
+                </TableView>
+
+            </VBox>
+
+        </VBox>
+
+    </content>
+
+</ScrollPane>
