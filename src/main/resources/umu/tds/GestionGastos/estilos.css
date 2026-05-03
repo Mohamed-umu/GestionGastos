@@ -1,0 +1,225 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #f4f6fa;
+}
+
+
+
+.barra-navegacion {
+    -fx-background-color: #1e293b;
+    -fx-padding: 10 16 10 16;
+    -fx-alignment: center-left;
+}
+
+.boton-nav {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 8 14 8 14;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.boton-nav:hover {
+    -fx-background-color: #334155;
+}
+
+.boton-nav:pressed {
+    -fx-background-color: #2563eb;
+}
+
+
+
+.label {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+}
+
+.titulo-principal {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.subtitulo {
+    -fx-font-size: 14px;
+    -fx-text-fill: #64748b;
+}
+
+.titulo-seccion {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+
+
+.panel-formulario {
+    -fx-background-color: white;
+    -fx-padding: 16;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #dbe2ea;
+}
+
+.panel-tabla {
+    -fx-background-color: white;
+    -fx-padding: 12;
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: #dbe2ea;
+}
+
+.panel-importacion {
+    -fx-background-color: #f8fafc;
+    -fx-padding: 12;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #cbd5e1;
+}
+
+/* =========================
+   CAMPOS
+   ========================= */
+
+.text-field,
+.combo-box,
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 4;
+}
+
+.text-field:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-border-color: #2563eb;
+}
+
+
+
+.button {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 8 14 8 14;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+
+.boton-primario {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+}
+
+.boton-primario:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+
+.boton-exito {
+    -fx-background-color: #16a34a;
+    -fx-text-fill: white;
+}
+
+.boton-exito:hover {
+    -fx-background-color: #15803d;
+}
+
+
+.boton-peligro {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+}
+
+.boton-peligro:hover {
+    -fx-background-color: #b91c1c;
+}
+
+
+.boton-secundario {
+    -fx-background-color: #64748b;
+    -fx-text-fill: white;
+}
+
+.boton-secundario:hover {
+    -fx-background-color: #475569;
+}
+
+
+.boton-importar {
+    -fx-background-color: #7c3aed;
+    -fx-text-fill: white;
+}
+
+.boton-importar:hover {
+    -fx-background-color: #6d28d9;
+}
+
+
+.boton-exportar {
+    -fx-background-color: #ea580c;
+    -fx-text-fill: white;
+}
+
+.boton-exportar:hover {
+    -fx-background-color: #c2410c;
+}
+
+
+
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #dbe2ea;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e2e8f0;
+    -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: #e2e8f0;
+    -fx-size: 36px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #0f172a;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-cell-size: 34px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f8fafc;
+}
+
+.table-row-cell:even {
+    -fx-background-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #bfdbfe;
+}
+
+
+
+.chart {
+    -fx-background-color: white;
+    -fx-border-color: #dbe2ea;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+
+.chart-title {
+    -fx-text-fill: #0f172a;
+    -fx-font-weight: bold;
+}
