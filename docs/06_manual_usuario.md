@@ -17,9 +17,9 @@ mvn javafx:run
 Al iniciar la aplicación se abre la ventana principal de **Gestión de Gastos**.
 
 
-```markdown
+
 ![Ventana principal](imagenes/manual_01_principal.png)
-```
+
 
 
 ---
