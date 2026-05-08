@@ -477,27 +477,9 @@ También puede generar ficheros CSV cuando el usuario exporta gastos.
 
 ---
 
-## 24. Recomendación de capturas para la entrega
 
-Para que el manual quede completo, se recomienda incluir al menos estas capturas:
 
-| Archivo | Contenido recomendado |
-|---|---|
-| `manual_01_principal.png` | Ventana principal de la aplicación |
-| `manual_04_gastos_guardados.png` | Tabla con gastos guardados |
-| `manual_07_importar_gastos.png` | Gastos importados pendientes |
-| `manual_10_estadisticas.png` | Pantalla de estadísticas |
-| `manual_12_crear_alerta.png` | Creación de alerta |
-| `manual_14_historial_alertas.png` | Historial de notificaciones |
-| `manual_15_crear_cuenta_compartida.png` | Creación de cuenta compartida |
-| `manual_17_saldos_cuenta.png` | Tabla de saldos |
-| `manual_18_cli.png` | Menú de línea de comandos |
-
-No es obligatorio poner todas si el documento queda demasiado largo, pero sí conviene poner capturas de las ventanas principales.
-
----
-
-## 25. Conclusión
+## 24. Conclusión
 
 Este manual resume el uso principal de la aplicación **Gestión de Gastos**.
 
