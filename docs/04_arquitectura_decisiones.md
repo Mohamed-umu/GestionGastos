@@ -330,10 +330,4 @@ Las principales decisiones de diseño tomadas han sido:
 9. Evitar modificar datos sensibles de gastos compartidos.
 10. Usar una línea de comandos que comparte los mismos datos que la interfaz gráfica.
 
----
 
-## 17. Conclusión
-
-La arquitectura de la aplicación busca mantener una separación clara entre interfaz, lógica de negocio y persistencia.
-
-Esta organización facilita el mantenimiento del código y permite ampliar el proyecto en el futuro, por ejemplo añadiendo nuevos formatos de importación, nuevos tipos de alertas o nuevas visualizaciones estadísticas.

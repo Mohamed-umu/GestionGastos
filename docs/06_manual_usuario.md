@@ -475,14 +475,3 @@ Estos ficheros almacenan la información persistente de la aplicación.
 
 También puede generar ficheros CSV cuando el usuario exporta gastos.
 
----
-
-
-
-## 24. Conclusión
-
-Este manual resume el uso principal de la aplicación **Gestión de Gastos**.
-
-El usuario puede registrar gastos, importarlos, exportarlos, consultar estadísticas, configurar alertas, gestionar cuentas compartidas y utilizar una línea de comandos básica.
-
-La aplicación mantiene los datos guardados mediante ficheros JSON, por lo que la información se conserva entre ejecuciones.

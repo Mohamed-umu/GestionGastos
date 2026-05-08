@@ -420,15 +420,4 @@ También se usan filtros encadenados en `EstadisticasController` para aplicar co
 | Adaptador | Convertir ficheros externos a objetos `Gasto` | `ImportadorCSV`, `ImportadorTXT` |
 | Separación FXML-Controlador | Separar vista y lógica de interacción | FXML + controladores Java |
 
----
 
-## 10. Conclusión
-
-Los patrones de diseño utilizados ayudan a mantener el proyecto organizado y facilitan su mantenimiento.
-
-El patrón Estrategia permite ampliar el sistema de alertas.  
-El Método Factoría y los adaptadores facilitan la importación de diferentes formatos.  
-El patrón Repositorio desacopla la persistencia del resto de la aplicación.  
-El patrón Singleton permite compartir gestores y repositorios de forma controlada.
-
-En conjunto, estas decisiones hacen que el código sea más claro, reutilizable y fácil de ampliar.

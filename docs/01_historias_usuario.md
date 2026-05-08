@@ -275,18 +275,3 @@ Las historias describen las funcionalidades principales de la aplicación desde 
 - Los cambios realizados desde consola se guardan en los mismos ficheros JSON que usa la interfaz gráfica.
 - Si se modifican gastos de cuentas compartidas, los saldos se recalculan.
 
----
-
-## Resumen
-
-Las historias de usuario anteriores cubren las funcionalidades principales solicitadas en el enunciado:
-
-- Gestión completa de gastos.
-- Persistencia de información.
-- Interfaz gráfica.
-- Línea de comandos.
-- Estadísticas y filtros.
-- Alertas configurables.
-- Historial de notificaciones.
-- Cuentas compartidas.
-- Importación y exportación de datos.
