@@ -51,3 +51,12 @@ Para ejecutar la versión de línea de comandos desde PowerShell:
 ```bash
 mvn exec:java "-Dexec.mainClass=umu.tds.GestionGastos.CLI"
 ```
+
+## Documentación
+
+- [Historias de usuario](docs/01_historias_usuario.md)
+- [Diagrama de clases](docs/02_diagrama_clases.md)
+- [Diagrama de interacción](docs/03_diagrama_interaccion.md)
+- [Arquitectura y decisiones](docs/04_arquitectura_decisiones.md)
+- [Patrones de diseño](docs/05_patrones_diseno.md)
+- [Manual de usuario](docs/06_manual_usuario.md)
