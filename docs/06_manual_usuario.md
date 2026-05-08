@@ -36,9 +36,9 @@ La aplicación tiene una zona superior de navegación con varios apartados:
 Cada botón cambia el contenido central de la aplicación sin abrir una nueva ventana.
 
 
-```markdown
+
 ![Navegación principal](imagenes/manual_02_navegacion.png)
-```
+
 
 
 ---
@@ -64,9 +64,9 @@ Si los datos son correctos, el gasto aparece en la tabla de gastos guardados.
 
 
 
-```markdown
+
 ![Formulario de nuevo gasto](imagenes/manual_03_nuevo_gasto.png)
-```
+
 
 
 ---
@@ -90,9 +90,9 @@ Los gastos se ordenan de más reciente a más antiguo.
 
 
 
-```markdown
+
 ![Gastos guardados](imagenes/manual_04_gastos_guardados.png)
-```
+
 
 
 ---
@@ -118,9 +118,9 @@ No se permite modificar directamente:
 - Cantidad.
 
 
-```markdown
+
 ![Edición de gastos](imagenes/manual_05_editar_gasto.png)
-```
+
 
 
 ---
@@ -138,9 +138,9 @@ Si el gasto pertenecía a una cuenta compartida, la aplicación recalcula los sa
 
 
 
-```markdown
+
 ![Eliminar gasto](imagenes/manual_06_eliminar_gasto.png)
-```
+
 
 
 ---
@@ -161,9 +161,8 @@ Esto permite revisar los datos antes de incorporarlos definitivamente.
 
 
 
-```markdown
+
 ![Importación de gastos](imagenes/manual_07_importar_gastos.png)
-```
 
 
 ---
@@ -183,9 +182,7 @@ Si algún gasto importado pertenece a una cuenta compartida, también se actuali
 
 
 
-```markdown
 ![Guardar importados](imagenes/manual_08_guardar_importados.png)
-```
 
 ---
 
@@ -221,9 +218,8 @@ Date,Account,Category,Subcategory,Note,Payer,Amount,Currency
 
 **Captura recomendada:** ventana de guardado o mensaje de exportación correcta.
 
-```markdown
+
 ![Exportar CSV](imagenes/manual_09_exportar_csv.png)
-```
 
 ---
 
@@ -242,9 +238,8 @@ La pantalla muestra:
 
 
 
-```markdown
+
 ![Estadísticas](imagenes/manual_10_estadisticas.png)
-```
 
 
 
@@ -272,9 +267,8 @@ Para volver a mostrar todos los datos:
 Los filtros afectan a los gráficos, al total, al número de gastos, a la media y a la tabla resumen.
 
 
-```markdown
 ![Filtros de estadísticas](imagenes/manual_11_filtros_estadisticas.png)
-```
+
 
 ---
 
@@ -295,9 +289,9 @@ La categoría es opcional. Si no se indica categoría, la alerta se aplica a tod
 
 
 
-```markdown
+
 ![Crear alerta](imagenes/manual_12_crear_alerta.png)
-```
+
 
 ---
 
@@ -315,9 +309,9 @@ Si la categoría aparece como **Todas**, significa que la alerta se aplica a tod
 
 
 
-```markdown
+
 ![Alertas activas](imagenes/manual_13_alertas_activas.png)
-```
+
 
 ---
 
@@ -349,9 +343,9 @@ El usuario puede usar:
 - **Limpiar historial**, para borrar el historial.
 
 
-```markdown
+
 ![Historial de alertas](imagenes/manual_14_historial_alertas.png)
-```
+
 
 ---
 
@@ -370,9 +364,9 @@ No se pueden crear dos cuentas con el mismo nombre.
 Una vez creada la cuenta, la lista de personas no puede modificarse para evitar inconsistencias en los saldos.
 
 
-```markdown
+
 ![Crear cuenta compartida](imagenes/manual_15_crear_cuenta_compartida.png)
-```
+
 
 ---
 
@@ -393,9 +387,9 @@ La suma total de porcentajes debe ser 100%.
 Si no suma 100%, la aplicación muestra un error.
 
 
-```markdown
+
 ![Porcentajes cuenta compartida](imagenes/manual_16_porcentajes_cuenta.png)
-```
+
 
 ---
 
@@ -409,9 +403,9 @@ La tabla de saldos muestra cuánto debe o cuánto le deben a cada persona.
 Los saldos se actualizan cuando se añaden o eliminan gastos asociados a esa cuenta compartida.
 
 
-```markdown
+
 ![Saldos cuenta compartida](imagenes/manual_17_saldos_cuenta.png)
-```
+
 
 ---
 
@@ -460,9 +454,9 @@ Los cambios realizados desde la línea de comandos se guardan en los mismos fich
 
 
 
-```markdown
+
 ![Línea de comandos](imagenes/manual_18_cli.png)
-```
+
 
 ---
 
